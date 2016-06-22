@@ -12,3 +12,8 @@ cp guake.desktop ~/.config/autostart
 gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-minimize-window true
 
 
+#When installing intellij after runing the idea.sh,
+#click configure (bottom )create desktop-entry in the splash screen to create a launcher
+#See https://www.jetbrains.com/help/idea/2016.1/installing-and-launching.html#desktop_shortcut
+
+
