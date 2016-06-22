@@ -8,3 +8,7 @@ cp guake.desktop ~/.config/autostart
 #gksudo gedit /etc/fstab
 #UUID=307FCFC34053E715 /media/ntfs ntfs rw,nosuid,nodev,noatime,allow_other 0 0
 
+#Enable minimize on side-bar iconclick
+gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-minimize-window true
+
+
