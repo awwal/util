@@ -1,5 +1,7 @@
 #!/bin/bash
-sudo apt-get install -y vim curl git python-software-properties maven unzip
+sudo apt-get install -y vim curl git python-software-properties maven unzip 
+
+
 # Install Zsh shell
 sudo apt-get update && sudo apt-get install -y zsh 
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
