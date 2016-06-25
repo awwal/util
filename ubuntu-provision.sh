@@ -16,3 +16,8 @@ bash ./fonts-master/install.sh
 
 rm -rf powerline-fonts
 rm -f powerline-fonts.zip
+
+#reduce cleanup time of /tmp 
+#sudo vi /etc/default/rcS 
+#change TMPTIME=7 for example
+
