@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt-get install -y guake
+sudo apt-get install -y guake gksu
  
 #auto start guake sh -c "sleep 30s; guake"
 cp guake.desktop ~/.config/autostart
