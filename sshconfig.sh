@@ -1,4 +1,3 @@
-
 #!/bin/bash 
 
 #create shortcut. With below you can do 'ssh work'
