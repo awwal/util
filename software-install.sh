@@ -21,4 +21,11 @@ sudo apt-get install -y virtualbox
 sudo apt-get install -y vagrant
 
 sudo apt-get install -y postgresql postgresql-contrib pgadmin3
+###from the terminal createuser
+## $ createuser lawal
+## switch to default postgres sudo su - postgres
+## psql
+## ALTER ROLE lawal SUPERUSER CREATEDB;
+##\du list user
+##
 
