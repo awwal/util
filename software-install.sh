@@ -26,6 +26,7 @@ sudo apt-get install -y postgresql postgresql-contrib pgadmin3
 ## switch to default postgres sudo su - postgres
 ## psql
 ## ALTER ROLE lawal SUPERUSER CREATEDB;
+##ALTER ROLE lawal WITH PASSWORD 'melikethis';
 ##\du list user
 ##CREATE DATABASE lawal OWNER lawal;
 ##
