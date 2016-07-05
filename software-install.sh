@@ -27,5 +27,7 @@ sudo apt-get install -y postgresql postgresql-contrib pgadmin3
 ## psql
 ## ALTER ROLE lawal SUPERUSER CREATEDB;
 ##\du list user
+##CREATE DATABASE lawal OWNER lawal;
 ##
+
 
