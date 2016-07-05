@@ -20,3 +20,5 @@ sudo apt-get install -y ubuntu-restricted-extras
 sudo apt-get install -y virtualbox
 sudo apt-get install -y vagrant
 
+sudo apt-get install -y postgresql postgresql-contrib pgadmin3
+
