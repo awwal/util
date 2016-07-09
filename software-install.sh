@@ -31,4 +31,7 @@ sudo apt-get install -y postgresql postgresql-contrib pgadmin3
 ##CREATE DATABASE lawal OWNER lawal;
 ##
 
+#Release ctrl-alt-down  from gnome
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['']"
+
 
