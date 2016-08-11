@@ -20,7 +20,7 @@ sudo apt-get install -y ubuntu-restricted-extras
 sudo apt-get install -y virtualbox
 sudo apt-get install -y vagrant
 sudo apt install -y openjdk-8-source
-
+sudo apt-get install -y gradle
 
 
 sudo apt-get install -y postgresql postgresql-contrib pgadmin3
