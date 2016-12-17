@@ -24,9 +24,9 @@ sudo apt-get install -y gradle cloc
 
 
 sudo apt-get install -y postgresql postgresql-contrib pgadmin3
+## switch to default postgres sudo su - postgres
 ###from the terminal createuser
 ## $ createuser lawal
-## switch to default postgres sudo su - postgres
 ## psql
 ## ALTER ROLE lawal SUPERUSER CREATEDB;
 ##ALTER ROLE lawal WITH PASSWORD 'melikethis';
