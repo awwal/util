@@ -40,4 +40,6 @@ sudo apt-get install -y postgresql postgresql-contrib pgadmin3
 #Release ctrl-alt-down  from gnome
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['']"
 
+#Set nautilus shortcut 
+#http://askubuntu.com/questions/483917/is-there-any-shortcut-keys-to-open-nautilus
 
