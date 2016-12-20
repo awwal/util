@@ -16,8 +16,8 @@ gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshel
 #click configure (bottom )create desktop-entry in the splash screen to create a launcher
 #See https://www.jetbrains.com/help/idea/2016.1/installing-and-launching.html#desktop_shortcut
 
-sudo apt-get install unity-tweak-tool
-
+sudo apt-get install -y unity-tweak-tool
+sudo apt-get install -y solaar-gnome3
 
 sudo apt-get install -y ubuntu-restricted-extras
 sudo apt-get install -y virtualbox
