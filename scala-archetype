@@ -1,0 +1,7 @@
+mvn archetype:generate \
+      -DarchetypeGroupId=org.scala-tools.archetypes \
+      -DarchetypeArtifactId=scala-archetype-simple  \
+      -DremoteRepositories=http://scala-tools.org/repo-releases \
+      -DgroupId=com.lawal \
+      -DartifactId=scala-helloworld \
+      -Dversion=1.0-SNAPSHOT
