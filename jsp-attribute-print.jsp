@@ -9,7 +9,7 @@
                         String attributeName = enumeration.nextElement();
                         Object attribute = request.getAttribute(attributeName);
                         out.println(attributeName + " -> " + attribute.getClass().getName() + ":" + attribute.toString()+"<br>");
-                        out.println("<br>")
+                        out.println("<br>");
                     }
 
                     %>
