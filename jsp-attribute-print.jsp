@@ -1,4 +1,8 @@
-  <%
+<%@ page import="java.util.*" %>
+ 
+
+
+<%
                     Enumeration in = request.getParameterNames();
                     while(in.hasMoreElements()) {
                      String paramName = in.nextElement().toString();
