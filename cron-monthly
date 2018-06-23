@@ -1,0 +1,1 @@
+0 0 1 * *  ansible-playbook -vv /home/lawal/app/cleandownloads.yml > /home/lawal/logs/clean.log 2>&1
