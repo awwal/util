@@ -1,3 +1,6 @@
+# Run like so
+# ansible-playbook  cleandownloads.yml  -vv --extra-vars "target_folder='/home/lawal/Downloads/201711/others/201711-files/others/' month=201710"
+
 - hosts: localhost
   connection: local
   gather_facts: no
