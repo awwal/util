@@ -1,0 +1,87 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  vars:
+    - target_folder: ~/Downloads/June23
+    - month: "{{ lookup('pipe', 'date +\"%Y%m\"') }}"
+    - suffix: "files"
+    - folder_name: "{{ month }}_{{ suffix }}"
+
+
+  tasks:
+    - name:  Find large files
+      find:
+         paths: "{{ target_folder }}"
+         recurse: no
+         size: 50m
+      register: large_files
+
+    - name: create large_files folder
+      file:
+        path: "{{ target_folder }}/{{ folder_name }}/largefiles"
+        state: directory
+        recurse: yes
+      register: largefilefolder
+
+    - debug: msg={{ large_files.files }}
+
+
+    - name: move large_files
+      command: "mv '{{ item.path }}'  '{{ largefilefolder.path }}' "
+      with_items:
+        - "{{ large_files.files }}"
+
+    - debug: msg={{ large_files }}
+
+
+    - name: create image folder
+      file:
+        path: "{{ target_folder }}/{{ folder_name }}/images"
+        state: directory
+        recurse: yes
+      register: imagefolder
+
+
+    - name: move images
+      command: "mv '{{ item }}'  '{{ imagefolder.path }}'"
+      with_fileglob:
+        - "{{ target_folder }}/*.png"
+        - "{{ target_folder }}/*.jpg"
+        - "{{ target_folder }}/*.jpeg"
+        - "{{ target_folder }}/*.gif"
+        - "{{ target_folder }}/*.JPEG"
+
+
+
+    - name: create doc folder
+      file:
+        path: "{{ target_folder }}/{{ folder_name }}/docs"
+        state: directory
+        recurse: yes
+      register: docfolder
+
+
+    - name: move images
+      command: "mv '{{ item }}'  '{{ docfolder.path }}'"
+      with_fileglob:
+        - "{{ target_folder }}/*.doc"
+        - "{{ target_folder }}/*.docx"
+        - "{{ target_folder }}/*.pdf"
+        - "{{ target_folder }}/*.PDF"
+        - "{{ target_folder }}/*.txt"
+
+
+    - name: create other folder
+      file:
+        path: "{{ target_folder }}/{{ folder_name }}/others"
+        state: directory
+        recurse: yes
+      register: otherfolder
+
+
+    - name: move rest
+      command: >
+        find '{{ target_folder }}' \
+        -mindepth 1 -maxdepth 1 \
+        ! -name "*{{ suffix }}" \
+        -exec mv '{}' '{{otherfolder.path}}' \;
