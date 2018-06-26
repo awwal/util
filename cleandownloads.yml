@@ -72,6 +72,10 @@
         - "{{ target_folder }}/*.pdf"
         - "{{ target_folder }}/*.PDF"
         - "{{ target_folder }}/*.txt"
+        - "{{ target_folder }}/*.xlsx"
+        - "{{ target_folder }}/*.ppt"
+        - "{{ target_folder }}/*.pptx"
+
 
 
     - name: create other folder
