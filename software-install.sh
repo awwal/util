@@ -11,6 +11,7 @@ cp guake.desktop ~/.config/autostart
 #Enable minimize on side-bar iconclick
 gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-minimize-window true
 
+gsettings set org.gnome.desktop.interface clock-show-date true
 
 #When installing intellij after runing the idea.sh,
 #click configure (bottom )create desktop-entry in the splash screen to create a launcher
